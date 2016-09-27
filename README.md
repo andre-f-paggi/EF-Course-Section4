@@ -1,2 +1,4 @@
-# EF-Course-Section4
-Exercises from https://www.udemy.com/entity-framework-tutorial/
+# Entity Framework Course
+
+These are my solutions for the exercises of the Entity Framework course found at:
+https://www.udemy.com/entity-framework-tutorial/
