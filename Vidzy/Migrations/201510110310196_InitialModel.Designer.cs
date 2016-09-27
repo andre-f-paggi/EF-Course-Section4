@@ -7,13 +7,13 @@ namespace Vidzy.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ChangingVideoTableToReferOnlyOneGenre : IMigrationMetadata
+    public sealed partial class InitialModel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ChangingVideoTableToReferOnlyOneGenre));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609262142582_ChangingVideoTableToReferOnlyOneGenre"; }
+            get { return "201510110310196_InitialModel"; }
         }
         
         string IMigrationMetadata.Source

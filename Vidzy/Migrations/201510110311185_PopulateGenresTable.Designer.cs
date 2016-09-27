@@ -7,13 +7,13 @@ namespace Vidzy.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class PopulatingGenresAndVideos : IMigrationMetadata
+    public sealed partial class PopulateGenresTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulatingGenresAndVideos));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulateGenresTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609262132463_PopulatingGenresAndVideos"; }
+            get { return "201510110311185_PopulateGenresTable"; }
         }
         
         string IMigrationMetadata.Source

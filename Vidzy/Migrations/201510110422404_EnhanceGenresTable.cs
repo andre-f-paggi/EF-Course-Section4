@@ -3,16 +3,16 @@ namespace Vidzy.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddingClassificationToVideosTable : DbMigration
+    public partial class EnhanceGenresTable : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Videos", "Classification", c => c.Int(nullable: false));
+            AlterColumn("dbo.Genres", "Name", c => c.String(nullable: false, maxLength: 255));
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Videos", "Classification");
+            AlterColumn("dbo.Genres", "Name", c => c.String());
         }
     }
 }

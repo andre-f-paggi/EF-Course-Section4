@@ -3,7 +3,7 @@ namespace Vidzy.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddTagsTableAndVideoTagsRelationship : DbMigration
+    public partial class AddTags : DbMigration
     {
         public override void Up()
         {

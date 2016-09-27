@@ -3,7 +3,7 @@ namespace Vidzy.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class ChangingVideoTableToReferOnlyOneGenre : DbMigration
+    public partial class AddGenreToVideosTable : DbMigration
     {
         public override void Up()
         {
@@ -11,7 +11,7 @@ namespace Vidzy.Migrations
             DropForeignKey("dbo.VideoGenres", "Genre_Id", "dbo.Genres");
             DropIndex("dbo.VideoGenres", new[] { "Video_Id" });
             DropIndex("dbo.VideoGenres", new[] { "Genre_Id" });
-            AddColumn("dbo.Videos", "Genre_Id", c => c.Int());
+            AddColumn("dbo.Videos", "Genre_Id", c => c.Byte());
             CreateIndex("dbo.Videos", "Genre_Id");
             AddForeignKey("dbo.Videos", "Genre_Id", "dbo.Genres", "Id");
             DropTable("dbo.VideoGenres");
@@ -24,7 +24,7 @@ namespace Vidzy.Migrations
                 c => new
                     {
                         Video_Id = c.Int(nullable: false),
-                        Genre_Id = c.Int(nullable: false),
+                        Genre_Id = c.Byte(nullable: false),
                     })
                 .PrimaryKey(t => new { t.Video_Id, t.Genre_Id });
             

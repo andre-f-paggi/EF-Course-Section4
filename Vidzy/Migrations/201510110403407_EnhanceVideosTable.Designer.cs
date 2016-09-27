@@ -7,13 +7,13 @@ namespace Vidzy.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddingClassificationToVideosTable : IMigrationMetadata
+    public sealed partial class EnhanceVideosTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddingClassificationToVideosTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(EnhanceVideosTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609262144425_AddingClassificationToVideosTable"; }
+            get { return "201510110403407_EnhanceVideosTable"; }
         }
         
         string IMigrationMetadata.Source

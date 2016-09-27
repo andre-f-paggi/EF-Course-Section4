@@ -11,7 +11,7 @@ namespace Vidzy.Migrations
                 "dbo.Genres",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.Byte(nullable: false),
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
@@ -31,7 +31,7 @@ namespace Vidzy.Migrations
                 c => new
                     {
                         Video_Id = c.Int(nullable: false),
-                        Genre_Id = c.Int(nullable: false),
+                        Genre_Id = c.Byte(nullable: false),
                     })
                 .PrimaryKey(t => new { t.Video_Id, t.Genre_Id })
                 .ForeignKey("dbo.Videos", t => t.Video_Id, cascadeDelete: true)

@@ -7,13 +7,13 @@ namespace Vidzy.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AlterVideoAndGenreTablesConfiguration : IMigrationMetadata
+    public sealed partial class AddTags : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AlterVideoAndGenreTablesConfiguration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddTags));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609271706532_AlterVideoAndGenreTablesConfiguration"; }
+            get { return "201510110433495_AddTags"; }
         }
         
         string IMigrationMetadata.Source
