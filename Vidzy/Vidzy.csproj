@@ -75,9 +75,14 @@
     <Compile Include="Migrations\201609271706532_AlterVideoAndGenreTablesConfiguration.Designer.cs">
       <DependentUpon>201609271706532_AlterVideoAndGenreTablesConfiguration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609271730068_AddTagsTableAndVideoTagsRelationship.cs" />
+    <Compile Include="Migrations\201609271730068_AddTagsTableAndVideoTagsRelationship.Designer.cs">
+      <DependentUpon>201609271730068_AddTagsTableAndVideoTagsRelationship.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Classification.cs" />
     <Compile Include="Model\Genre.cs" />
+    <Compile Include="Model\Tag.cs" />
     <Compile Include="Model\Video.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609271706532_AlterVideoAndGenreTablesConfiguration.resx">
       <DependentUpon>201609271706532_AlterVideoAndGenreTablesConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609271730068_AddTagsTableAndVideoTagsRelationship.resx">
+      <DependentUpon>201609271730068_AddTagsTableAndVideoTagsRelationship.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

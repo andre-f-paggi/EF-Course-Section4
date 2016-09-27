@@ -15,5 +15,6 @@ namespace Vidzy.Model
 
         public Genre Genre { get; set; }
         public int GenreId { get; internal set; }
+        public ICollection<Tag> Tags { get; set; }
     }
 }
