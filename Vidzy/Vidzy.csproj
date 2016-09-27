@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\LocalDbContext.cs" />
+    <Compile Include="EntityConfigurations\GenreConfiguration.cs" />
+    <Compile Include="EntityConfigurations\VideoConfiguration.cs" />
     <Compile Include="Migrations\201609262121166_InitialModel.cs" />
     <Compile Include="Migrations\201609262121166_InitialModel.Designer.cs">
       <DependentUpon>201609262121166_InitialModel.cs</DependentUpon>
@@ -68,6 +70,10 @@
     <Compile Include="Migrations\201609262144425_AddingClassificationToVideosTable.cs" />
     <Compile Include="Migrations\201609262144425_AddingClassificationToVideosTable.Designer.cs">
       <DependentUpon>201609262144425_AddingClassificationToVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609271706532_AlterVideoAndGenreTablesConfiguration.cs" />
+    <Compile Include="Migrations\201609271706532_AlterVideoAndGenreTablesConfiguration.Designer.cs">
+      <DependentUpon>201609271706532_AlterVideoAndGenreTablesConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Classification.cs" />
@@ -93,7 +99,11 @@
     <EmbeddedResource Include="Migrations\201609262144425_AddingClassificationToVideosTable.resx">
       <DependentUpon>201609262144425_AddingClassificationToVideosTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609271706532_AlterVideoAndGenreTablesConfiguration.resx">
+      <DependentUpon>201609271706532_AlterVideoAndGenreTablesConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
